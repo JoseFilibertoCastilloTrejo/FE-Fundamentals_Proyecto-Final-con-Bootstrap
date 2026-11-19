@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" crossorigin="anonymous">
+    <style>
+      
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/principal.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+
+  
+    <div class="container text-center bg-primary-subtle p-4">
+      
+      <!-- Titulo a -->
+      <div class="row ">
+        <div class="col-12 bg-light ">
+          <h1 fs-2>Tienda de <span class="text-primary">Muebles</span></h1>
+        </div>
+      </div>
+       <!-- Barra de navegacion -->
+      <div class="row mb-2">
+        <nav class="navbar navbar-expand-lg bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Nosotros</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-white" >Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" >Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" >Galeria</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link text-white" >Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>  
+      </div>
+       <!-- Hero Image -->
+      <div class="row">
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 style="font-size:30px">Tienda en Linea con Bootstrap</h1>
+            
+          </div>
+        </div>                    
+      </div>
+      <!--Nuestros Producto -->
+      <div class="row my-3">
+        <h2>Nuestros Productos</h2>
+      </div>
+
+       <!-- Primer Poducto -->
+      <div class="row gx-0 mb-5">
+          <div class="col-12 col-xs-6 col-sm-6 "><img class="w-100" src="./img/producto1.jpg"></div>
+          <div class="col-12 col-xs-6 col-sm-6 d-flex flex-column justify-content-center bg-primary text-white p-5">
+            <h3>Producto 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, excepturi odio dolore ad in illo assumenda ut suscipit necessitatibus magnam deserunt, ipsam alias asperiores placeat quod qui! Fugit, est quod.</p>
+            <span class = "fs-2 mb-3">$12,000</span>
+            <button class="bg-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+          </div> 
+      </div>
+      
+      <!-- Segunda fila --> 
+
+      <section class="container gx-0 mb-5">
+        <div class="row ">
+            <article class="col-6">
+              <img class="w-100" src="./img/producto2.jpg" alt="">
+              <div>
+                  <div class="col-12 col-xs-12 col-sm-12 d-flex flex-column justify-content-center bg-primary text-white p-5">
+                  <h3>Producto 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, excepturi odio dolore ad in illo assumenda ut suscipit necessitatibus magnam deserunt, ipsam alias asperiores placeat quod qui! Fugit, est quod.</p>
+                  <span class = "fs-2 mb-3">$12,000</span>
+                  <button class="bg-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+              </div>
+              </div>
+
+            </article>
+
+                        <article class="col-6">
+              <img class="w-100" src="./img/producto3.jpg" alt="">
+              <div>
+                  <div class="col-12 col-xs-12 col-sm-12 d-flex flex-column justify-content-center bg-primary text-white p-5">
+                  <h3>Producto 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, excepturi odio dolore ad in illo assumenda ut suscipit necessitatibus magnam deserunt, ipsam alias asperiores placeat quod qui! Fugit, est quod.</p>
+                  <span class = "fs-2 mb-3">$12,000</span>
+                  <button class="bg-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+              </div>
+              </div>
+
+            </article>  
+        </div>
+      </section>
+
+      <!-- Tercer fila --> 
+
+      <section class="container">
+        <div class="row">
+            <article class="col-4">
+              <img class="w-100" src="./img/producto4.jpg" alt="">
+              <div>
+                  <div class="col-12 col-xs-12 col-sm-12 d-flex flex-column justify-content-center bg-primary text-white p-5">
+                  <h3>Producto 4</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, excepturi odio dolore ad in illo assumenda ut suscipit necessitatibus magnam deserunt, ipsam alias asperiores placeat quod qui! Fugit, est quod.</p>
+                  <span class = "fs-2 mb-3">$12,000</span>
+                  <button class="bg-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+              </div>
+              </div>
+
+            </article>
+
+            <article class="col-4">
+              <img class="w-100" src="./img/producto5.jpg" alt="">
+              <div>
+                  <div class="col-12 col-xs-12 col-sm-12 d-flex flex-column justify-content-center bg-primary text-white p-5">
+                  <h3>Producto 5</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, excepturi odio dolore ad in illo assumenda ut suscipit necessitatibus magnam deserunt, ipsam alias asperiores placeat quod qui! Fugit, est quod.</p>
+                  <span class = "fs-2 mb-3">$12,000</span>
+                  <button class="bg-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+              </div>
+              </div>
+
+            </article>  
+
+            <article class="col-4">
+              <img class="w-100" src="./img/producto6.jpg" alt="">
+              <div>
+                  <div class="col-12 col-xs-12 col-sm-12 d-flex flex-column justify-content-center bg-primary text-white p-5">
+                  <h3>Producto 6</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, excepturi odio dolore ad in illo assumenda ut suscipit necessitatibus magnam deserunt, ipsam alias asperiores placeat quod qui! Fugit, est quod.</p>
+                  <span class = "fs-2 mb-3">$12,000</span>
+                  <button class="bg-success w-auto mx-auto px-3 py-1">Agregar al carrito</button>
+              </div>
+              </div>
+
+            </article>  
+        </div>
+      </section>
+
+
+    </div>  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js" integrity="sha384-WyOxWvTyr1QaMPfiPJSv76iReVthorl5uWlFtZPyK0IEB0hGzo9y5Bp9mYanr8Bu" crossorigin="anonymous"></script>
+  </body>
+</html>
